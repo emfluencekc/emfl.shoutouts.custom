@@ -1,0 +1,55 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+* { box-sizing: border-box; font-family: sans-serif; }
+form {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+.row {
+    display: block;
+    font-size: 0;
+    margin-bottom: 10px;
+}
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    vertical-align: top;
+    font-size: 12px;
+    padding: 7px 10px 0 0;
+}
+.row.select label {
+    padding-top: 2px;
+}
+input,
+textarea {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 12px;
+    padding: 5px;
+    border: solid 1px black;
+}
+select {
+    font-size: 12px;
+}
+textarea {
+    height: 100px;
+}
+input[type=submit] {
+    display: inline-block;
+    width: auto;
+    margin-left: 150px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,24 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+* { box-sizing: border-box; font-family: sans-serif; }
+section {
+    display: block;
+    margin: 50px;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
+}
+article {
+    display: inline-block;
+    max-width: 150px;
+    padding: 20px;
+    background: gold;
+    margin: 5px;
+    vertical-align: top;
+}
+.from {
+    font-style: italic;
+}
