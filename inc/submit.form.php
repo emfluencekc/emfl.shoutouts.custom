@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Submit an emfluence shout-out!</title>
+  <title>Submit &hearts;</title>
   <link rel="stylesheet" href="css/submit.css" />
 </head>
 <body>
@@ -39,5 +39,14 @@
 
     <input type="submit" value="Submit" />
   </form>
+
+  <section class="about">
+    <h3>What can you do?</h3>
+    <ul>
+      <li><a href="https://giphy.com">giphy's</a> (use the embed code)</li>
+      <li>&lt;b&gt;bold&lt;/b&gt;, &lt;i&gt;italic&lt;/i&gt;, &lt;a href=&quot;...&quot;&gt;links&lt;a&gt;</li>
+      <li><a href="http://www.degraeve.com/reference/specialcharacters.php">HTML special characters</a> like &amp;hearts; = &hearts;</li>
+    </ul>
+  </section>
 </body>
 </html>

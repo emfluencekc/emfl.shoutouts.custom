@@ -53,3 +53,12 @@ input[type=submit] {
     color: white;
     cursor: pointer;
 }
+.about {
+    margin: 50px;
+}
+.about ul {
+    list-style-type: none;
+}
+.about li {
+    margin: 10px;
+}
