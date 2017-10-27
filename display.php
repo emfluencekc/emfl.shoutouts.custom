@@ -4,6 +4,7 @@ require_once 'inc/common.functions.php';
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>All the &hearts;</title>
   <link rel="stylesheet" href="css/display.css" />
 </head>
