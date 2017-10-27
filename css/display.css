@@ -58,10 +58,22 @@ iframe {
     max-width: 100%;
 }
 footer {
+    display: none;
+}
+footer.active {
+    display: block;
+}
+footer.text {
     position: fixed;
     bottom: 0;
     width: 100%;
     left: 0;
     padding: 10px;
     background: rgba(255,255,255,0.8);
+}
+footer.qr {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 0;
 }

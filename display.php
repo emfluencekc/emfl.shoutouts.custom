@@ -31,11 +31,19 @@ require_once 'inc/common.functions.php';
   }
   ?>
   </section>
-  <footer>Submit a shout-out here: <?php echo (empty($_SERVER['HTTPS']) ? 'http://' : 'https://') . $_SERVER['SERVER_NAME'] . str_replace('display.php', '', $_SERVER['REQUEST_URI']); ?></footer>
-<script>
-  setTimeout(function() { document.location = document.location; }, 1000*10);
-</script>
-  <link
-          rel='stylesheet' id='google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700%2C900%7CNunito+Sans%3A300%2C400%2C600%2C700%7CMontserrat%3A300%2C400%2C700%2C800%7CMontserrat+Alternates%3A400%2C700&#038;ver=4.8.1' type='text/css' media='all' />
+  <?php $submit_url = (empty($_SERVER['HTTPS']) ? 'http://' : 'https://') . $_SERVER['SERVER_NAME'] . str_replace('display.php', '', $_SERVER['REQUEST_URI']); ?>
+  <footer class="text">Submit a shout-out here: <?php echo $submit_url; ?></footer>
+  <footer class="qr"><img width="100" height="100" src="https://chart.googleapis.com/chart?cht=qr&choe=UTF-8&chs=200x200&chld=L|1&chl=<?php echo $submit_url; ?>"/></footer>
+  <script>
+    setTimeout(function() { document.location = document.location; }, 1000*10);
+    var linkMode = localStorage.getItem('linkMode');
+    console.log(linkMode);
+    if('qr' === linkMode) {
+      linkMode = 'text';
+    } else linkMode = 'qr';
+    document.getElementsByClassName(linkMode)[0].className += ' active';
+    localStorage.setItem('linkMode', linkMode);
+  </script>
+  <link rel='stylesheet' id='google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700%2C900%7CNunito+Sans%3A300%2C400%2C600%2C700%7CMontserrat%3A300%2C400%2C700%2C800%7CMontserrat+Alternates%3A400%2C700&#038;ver=4.8.1' type='text/css' media='all' />
 </body>
 </html>
