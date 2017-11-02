@@ -26,7 +26,7 @@ require_once 'inc/common.functions.php';
       <?php if(!empty($submission['from_name'])) { ?>
         <p class="from">&mdash; <?php echo strip_tags($submission['from_name']); ?></p>
       <?php } ?>
-      <div class="cat"><?php echo strip_tags($submission['category_slug']); ?></div>
+      <div class="cat <?php echo strtolower(strip_tags($submission['category_slug'])); ?>"><?php echo strip_tags($submission['category_slug']); ?></div>
     </article>
     <?php
   }
@@ -37,6 +37,8 @@ require_once 'inc/common.functions.php';
   <footer class="qr"><img width="100" height="100" src="https://chart.googleapis.com/chart?cht=qr&choe=UTF-8&chs=200x200&chld=L|1&chl=<?php echo $submit_url; ?>"/></footer>
   <script>
     setTimeout(function() { document.location = document.location; }, 1000*10);
+
+    // QR code or link URL
     var linkMode = localStorage.getItem('linkMode');
     console.log(linkMode);
     if('qr' === linkMode) {
@@ -44,6 +46,23 @@ require_once 'inc/common.functions.php';
     } else linkMode = 'qr';
     document.getElementsByClassName(linkMode)[0].className += ' active';
     localStorage.setItem('linkMode', linkMode);
+
+    // Time of day theming
+    var timeNow = (new Date()).getHours();
+    var themeName = '';
+    if(timeNow < 7) {
+      themeName = 'dark';
+    } else if(timeNow < 9) {
+      themeName = 'twilight';
+    } else if(timeNow < 17) {
+      themeName = 'light';
+    } else if(timeNow < 20) {
+      themeName = 'twilight';
+    } else {
+      themeName = 'dark';
+    }
+    themeName = 'light';
+    document.body.className += themeName;
   </script>
   <link rel='stylesheet' id='google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700%2C900%7CNunito+Sans%3A300%2C400%2C600%2C700%7CMontserrat%3A300%2C400%2C700%2C800%7CMontserrat+Alternates%3A400%2C700&#038;ver=4.8.1' type='text/css' media='all' />
 </body>

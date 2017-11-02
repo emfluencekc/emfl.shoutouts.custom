@@ -2,7 +2,6 @@ html, body {
     padding: 0;
     margin: 0;
     text-align: center;
-    background: #F2C200;
     color: #666;
 }
 * { box-sizing: border-box; font-family: 'Nunito Sans','Helvetica',Arial,sans-serif; }
@@ -50,7 +49,32 @@ article h3 {
     right: 0;
     display: inline-block;
     padding: 5px;
+    color: white;
 }
+.cat.integrity {
+    background: rgba(0, 167, 255, 0.5);
+}
+.cat.respect {
+    background: rgba(255, 76, 0, 0.5);
+}
+.cat.excellence {
+    background: rgba(255, 215, 0, 0.5);
+    color: black;
+}
+.cat.teamwork {
+    background: rgba(34, 139, 34, 0.5);
+}
+.cat.passion {
+    background: rgba(128, 0, 128, 0.5);
+}
+.cat.accountability {
+    background: rgba(0, 255, 185, 0.5);
+    color: black;
+}
+.cat.fun {
+    background: rgba(255, 0, 23, 0.5);
+}
+
 iframe {
     border: 0;
     margin: 0;
@@ -76,4 +100,24 @@ footer.qr {
     bottom: 0;
     right: 0;
     font-size: 0;
+}
+
+body {
+    background: #F2C200;
+}
+body.dark {
+    background: #333333;
+}
+body.dark article,
+body.dark h1,
+body.dark footer.text {
+    background: rgba(222, 222, 222, 0.9);
+}
+body.twilight {
+    background: rgb(213, 170, 0);
+}
+body.twilight article,
+body.twilight h1,
+body.twilight footer.text {
+    background: rgba(255,255,255,0.8);
 }
