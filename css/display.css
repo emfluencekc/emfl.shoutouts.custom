@@ -49,13 +49,14 @@ article h3 {
     right: 0;
     display: inline-block;
     padding: 5px;
-    color: white;
 }
 .cat.integrity {
     background: rgba(0, 167, 255, 0.5);
+    color: white;
 }
 .cat.respect {
     background: rgba(255, 76, 0, 0.5);
+    color: white;
 }
 .cat.excellence {
     background: rgba(255, 215, 0, 0.5);
@@ -63,9 +64,11 @@ article h3 {
 }
 .cat.teamwork {
     background: rgba(34, 139, 34, 0.5);
+    color: white;
 }
 .cat.passion {
     background: rgba(128, 0, 128, 0.5);
+    color: white;
 }
 .cat.accountability {
     background: rgba(0, 255, 185, 0.5);
@@ -73,6 +76,7 @@ article h3 {
 }
 .cat.fun {
     background: rgba(255, 0, 23, 0.5);
+    color: white;
 }
 
 iframe {
