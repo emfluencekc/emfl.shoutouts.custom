@@ -6,7 +6,7 @@ require_once 'inc/common.functions.php';
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>All the &hearts;</title>
-  <link rel="stylesheet" href="css/display.css?v=005" />
+  <link rel="stylesheet" href="css/display.css?v=006" />
 </head>
 <body>
   <h1>emfluence &hearts;</h1>
@@ -61,7 +61,6 @@ require_once 'inc/common.functions.php';
     } else {
       themeName = 'dark';
     }
-    themeName = 'light';
     document.body.className += themeName;
   </script>
   <link rel='stylesheet' id='google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700%2C900%7CNunito+Sans%3A300%2C400%2C600%2C700%7CMontserrat%3A300%2C400%2C700%2C800%7CMontserrat+Alternates%3A400%2C700&#038;ver=4.8.1' type='text/css' media='all' />
