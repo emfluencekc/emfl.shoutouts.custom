@@ -6,7 +6,7 @@ require_once 'inc/common.functions.php';
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>All the &hearts;</title>
-  <link rel="stylesheet" href="css/display.css?v=003" />
+  <link rel="stylesheet" href="css/display.css?v=004" />
 </head>
 <body>
   <h1>emfluence &hearts;</h1>
@@ -26,7 +26,7 @@ require_once 'inc/common.functions.php';
       <?php if(!empty($submission['from_name'])) { ?>
         <p class="from">&mdash; <?php echo strip_tags($submission['from_name']); ?></p>
       <?php } ?>
-      <div class="cat <?php echo strtolower(strip_tags($submission['category_slug'])); ?>"><?php echo strip_tags($submission['category_slug']); ?></div>
+      <div class="cat"><?php echo strip_tags($submission['category_slug']); ?></div>
     </article>
     <?php
   }

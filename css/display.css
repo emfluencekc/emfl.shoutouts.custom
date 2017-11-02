@@ -50,33 +50,54 @@ article h3 {
     display: inline-block;
     padding: 5px;
 }
-.cat.integrity {
+.integrity .cat {
     background: rgba(0, 167, 255, 0.5);
     color: white;
 }
-.cat.respect {
+.integrity h3 {
+    color: rgba(0, 167, 255, 1);
+}
+.respect .cat {
     background: rgba(255, 76, 0, 0.5);
     color: white;
 }
-.cat.excellence {
+.respect h3 {
+    color: rgb(255, 123, 0);
+}
+.excellence .cat {
     background: rgba(255, 215, 0, 0.5);
     color: black;
 }
-.cat.teamwork {
-    background: rgba(34, 139, 34, 0.5);
+.excellence h3 {
+    color: rgb(209, 177, 0);
+}
+.teamwork .cat {
+    background: rgba(66, 152, 153, 0.5);
     color: white;
 }
-.cat.passion {
+.teamwork h3 {
+    color: #429899;
+}
+.passion .cat {
     background: rgba(128, 0, 128, 0.5);
     color: white;
 }
-.cat.accountability {
+.passion h3 {
+    color: rgba(128, 0, 128, 1);
+}
+.accountability .cat {
     background: rgba(0, 255, 185, 0.5);
     color: black;
 }
-.cat.fun {
+.accountability h3 {
+    color: rgb(0, 194, 141);
+}
+.fun .cat {
     background: rgba(255, 0, 23, 0.5);
     color: white;
+}
+.fun h3 {
+    color: rgb(255, 0, 83);
 }
 
 iframe {
