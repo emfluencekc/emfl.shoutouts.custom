@@ -6,7 +6,7 @@ require_once 'inc/common.functions.php';
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>All the &hearts;</title>
-  <link rel="stylesheet" href="css/display.css" />
+  <link rel="stylesheet" href="css/display.css?v=2" />
 </head>
 <body>
   <h1>emfluence &hearts;</h1>
