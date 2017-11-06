@@ -6,7 +6,7 @@ require_once 'inc/common.functions.php';
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>All the &hearts;</title>
-  <link rel="stylesheet" href="css/display.css?v=006" />
+  <link rel="stylesheet" href="css/display.css?v=007" />
 </head>
 <body>
   <h1>emfluence &hearts;</h1>
@@ -50,13 +50,13 @@ require_once 'inc/common.functions.php';
     // Time of day theming
     var timeNow = (new Date()).getHours();
     var themeName = '';
-    if(timeNow < 7) {
+    if(timeNow < 8) {
       themeName = 'dark';
     } else if(timeNow < 9) {
       themeName = 'twilight';
     } else if(timeNow < 17) {
       themeName = 'light';
-    } else if(timeNow < 20) {
+    } else if(timeNow < 18) {
       themeName = 'twilight';
     } else {
       themeName = 'dark';
